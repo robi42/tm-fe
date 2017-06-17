@@ -1,0 +1,11 @@
+@import "~react-toolbox/lib/commons";
+@import "../lib/commons";
+
+.container {
+  margin: 0 auto;
+}
+
+main.content {
+  min-height: 1199px;
+  padding: 8 * $unit $unit $unit $unit;
+}

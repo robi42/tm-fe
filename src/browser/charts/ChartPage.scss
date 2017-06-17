@@ -1,0 +1,49 @@
+@import "~react-toolbox/lib/globals";
+
+.main {
+  .calendarHeatmap {
+    width: 1392px;
+    height: 320px;
+    margin: 0 auto;
+
+    svg {
+      overflow: visible;
+    }
+
+    > section.controls {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin: (2 * $unit) 0 $unit 0;
+    }
+  }
+
+  .notDisplayed {
+    display: none;
+  }
+
+  .charts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    margin-bottom: 3 * $unit;
+
+    rect {
+      cursor: pointer;
+    }
+
+    > section.controls {
+      width: 60%;
+
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      > [data-react-toolbox="dropdown"] {
+        min-width: 15%;
+      }
+    }
+  }
+
+}

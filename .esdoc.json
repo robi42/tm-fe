@@ -1,0 +1,13 @@
+{
+  "source": "./src",
+  "destination": "./doc",
+  "plugins": [
+    {
+      "name": "./flow/esdoc-plugin.js"
+    }
+  ],
+  "experimentalProposal": {
+    "classProperties": true,
+    "objectRestSpread": true
+  }
+}

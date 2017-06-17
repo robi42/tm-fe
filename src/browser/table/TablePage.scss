@@ -1,0 +1,17 @@
+@import "~react-toolbox/lib/commons";
+
+.main {
+  min-height: 864px;
+
+  section.controls {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    margin-top: auto;
+
+    .actions {
+      margin: (1.8 * $unit) auto 0 $unit;
+    }
+  }
+}

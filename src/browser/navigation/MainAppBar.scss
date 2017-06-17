@@ -1,0 +1,63 @@
+@import "~react-toolbox/lib/commons";
+@import "~react-toolbox/lib/app_bar/config";
+@import "~react-toolbox/lib/tabs/config";
+@import "~react-toolbox/lib/button/config";
+@import "../lib/commons";
+
+$title-font-size: 3 * $unit;
+
+// You need to boost priority more than the minimum since
+// your build comes with React Toolbox's and we can't
+// ensure the order. You can either set a wrapper or target
+// React Toolbox data attributes to boost
+.appbar {
+  justify-content: space-between;
+
+  > [data-react-toolbox="progress-bar"] {
+    margin-left: $unit;
+  }
+
+  > .title {
+    font-size: $title-font-size;
+    font-weight: $font-weight-bold;
+    position: relative;
+  }
+
+  > .clearSearch {
+    margin-top: 1.33 * $unit;
+    margin-left: 5%;
+  }
+
+  > .search {
+    margin-top: $unit;
+    margin-right: 2 * $unit;
+    width: 70%;
+  }
+
+  > .navigation {
+    position: absolute;
+    top: $appbar-height - $tab-label-height - (0.75 * $unit);
+    right: (2 * $button-floating-height) + (5 * $unit);
+    z-index: $z-index-higher;
+  }
+
+  > [data-react-toolbox="chip"] {
+    margin-right: 30%;
+    width: 13.5 * $unit;
+    min-width: 13.5 * $unit;
+  }
+
+  > .button {
+    position: absolute;
+    top: $appbar-height - ($button-floating-height / 2);
+    right: $button-floating-height / 2 + $button-floating-height + $unit;
+    z-index: $z-index-higher;
+  }
+
+  > form .button {
+    position: absolute;
+    top: $appbar-height - ($button-floating-height / 2);
+    right: $button-floating-height / 2;
+    z-index: $z-index-higher;
+  }
+}

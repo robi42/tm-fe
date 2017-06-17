@@ -1,0 +1,41 @@
+@import "~react-toolbox/lib/commons";
+@import "../lib/commons";
+
+.description {
+  text-align: center;
+}
+
+.chart {
+  padding-bottom: 1.5 * $unit;
+
+  g {
+    cursor: pointer;
+  }
+
+  > section.controls {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    > [data-react-toolbox="dropdown"] {
+      min-width: 15%;
+    }
+  }
+}
+
+.targetControls {
+  margin-top: 2%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  > [data-react-toolbox="dropdown"] {
+    margin-left: 30%;
+    width: 15%;
+  }
+  > [data-react-toolbox="input"] {
+    margin-right: 30%;
+    width: 6 * $unit;
+  }
+}

@@ -1,0 +1,27 @@
+@import "~react-toolbox/lib/globals";
+
+.inputFields {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  > [data-react-toolbox="date-picker"] {
+    width: 8 * $unit;
+    min-width: 7 * $unit;
+    margin-left: 5 * $unit;
+  }
+
+  > [data-react-toolbox="time-picker"] {
+    width: 5 * $unit;
+    min-width: 5 * $unit;
+    margin-right: 20 * $unit;
+  }
+}
+
+.input {
+  padding: 0 0 (0.5 * $unit) 0;
+
+  .inputElement {
+    text-align: center;
+  }
+}
